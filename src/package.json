@@ -1,0 +1,16 @@
+{
+    "name": "evishine-module-lib",
+    "private": true,
+    "repository": "",
+    "peerDependencies": {
+      "@angular/common": "^4.1.3",
+      "@angular/core": "^4.1.3",
+      "@angular/router": "^4.1.3",
+      "@types/jquery": "^3.3.1",
+      "jquery": "^3.3.1",
+      "rxjs": "^5.0.1",
+      "zone.js": "^0.8.4"
+    },
+    "scripts": {
+    }
+  }

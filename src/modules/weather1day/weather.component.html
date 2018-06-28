@@ -1,0 +1,17 @@
+<div id="weather-wrapper">
+  <div class="weather-1-day" id="weather">
+    <div id="weather-weather" class="weather">
+      <div id="weather_day_1" class="weather_day">
+        <div class="weather-date">{{strDate}}</div>
+        <div *ngIf="day" class="weather-img">
+          <img src="../../../assets/images/weather/512/{{day.hourly[0].weatherCode}}.png">
+        </div>
+        <div class="stats">
+          <div *ngIf="day" class="weather-temp-max">{{day.maxtempC}} &deg;C</div>
+          <div *ngIf="day" class="weather-temp-min">{{day.mintempC}} &deg;C</div>
+          <div *ngIf="day" class="weather-wind">{{day.hourly[0].winddir16Point + windSpeed}} m/s</div>
+          <div *ngIf="day" class="weather-rain">{{day.hourly[0].precipMM}} mm</div>
+      </div>
+      </div>
+    </div>
+  </div>
